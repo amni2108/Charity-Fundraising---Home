@@ -1,0 +1,143 @@
+/* Google Fonts */
+body {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fef9f4;
+  color: #333;
+}
+
+header {
+  background: #ffe6e6;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  color: #ff6f61;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+  color: #333;
+  font-weight: 600;
+}
+
+.dropdown-menu {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Slideshow */
+.slideshow {
+  position: relative;
+  max-width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+  }
+  nav ul.show {
+    display: flex;
+  }
+  .dropdown-menu {
+    display: block;
+  }
+}
+
+footer {
+  background: #ffd8be;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+/* Form Styles */
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff0f5;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form input, form select, form textarea, form button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  font-family: 'Nunito', sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background: #ff6f61;
+  color: #fff;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #ff3b2f;
+}
+
+/* About Section */
+.about-section {
+  padding: 50px;
+  text-align: center;
+}
+
+.calendar-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: 'Nunito', sans-serif;
+}
+.calendar-table th {
+  background: #ffcdd2;
+  padding: 10px;
+  color: #444;
+}
+.calendar-table td {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 8px;
+  height: 50px;
+}
+.event-day {
+  font-weight: bold;
+  color: #d32f2f;
+}
+

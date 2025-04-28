@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us - CharityFund</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="js/script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Quicksand:wght@400;600&family=Nunito&display=swap" rel="stylesheet">
+  <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.css' rel='stylesheet' />
+  <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.js'></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo">CharityFund</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="dropdown-menu">&#9776;</div>
+    </nav>
+  </header>
+
+  <main>
+  <section class="about-section">
+    <h1>About CharityFund</h1>
+    <p>
+      CharityFund started with a simple idea: that every act of generosity matters. 
+      Founded by a group of passionate individuals, our goal is to create a platform that connects donors with genuine causes across the country. 
+      We organize charity drives, fundraising campaigns, and volunteering programs that are transparent, trustworthy, and impactful. 
+    </p>
+    <p>
+      With the help of our incredible supporters, we have been able to support educational programs, healthcare initiatives, environmental projects, and community developments.
+      We are committed to ensuring that your contributions reach where they are needed most, and that every story we help create is one filled with hope, resilience, and inspiration.
+    </p>
+    <p>
+      At CharityFund, giving isn’t just about donations — it's about creating ripples of positive change that can touch lives across generations. Join us in this journey of hope, healing, and humanity.
+    </p>
+  </section>
+
+<section class="calendar-section">
+  <h2>Upcoming Events</h2>
+  <div id="calendar"></div>
+</section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CharityFund. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var calendarEl = document.getElementById('calendar');
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth',
+        events: [
+          { title: 'Charity Walk', date: '2025-04-02' },
+          { title: 'Food Donation Drive', date: '2025-04-08' },
+          { title: 'Blood Donation Camp', date: '2025-04-15' },
+          { title: 'Volunteering Workshop', date: '2025-04-20' },
+          { title: 'Online Fundraiser', date: '2025-04-25' },
+        ]
+      });
+      calendar.render();
+    });
+  </script>
+</body>
+</html>
